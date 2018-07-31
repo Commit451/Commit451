@@ -7,7 +7,7 @@ else
     url=$1
 fi
 
-git clone --branch=master $url temp
+git clone --branch=master $url temp -q
 cd temp
 git log --first-parent --skip 450 -n 1
 cd ..
